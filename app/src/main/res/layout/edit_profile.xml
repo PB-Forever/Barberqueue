@@ -9,13 +9,13 @@
     android:orientation="vertical"
     tools:context=".editProfile">
 
-    <TextView
+    <EditText
         android:id="@+id/profile_username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/edit_text_rounded_corner"
         android:elevation="5dp"
         android:hint="Username"
@@ -26,13 +26,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <TextView
+    <EditText
         android:id="@+id/profile_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="19dp"
         android:background="@drawable/edit_text_rounded_corner"
         android:elevation="5dp"
         android:enabled="false"
@@ -44,13 +44,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_username" />
 
-    <TextView
+    <EditText
         android:id="@+id/profile_phone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/edit_text_rounded_corner"
         android:elevation="5dp"
         android:enabled="false"
@@ -62,23 +62,59 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_email" />
 
-    <TextView
+    <EditText
         android:id="@+id/profile_gender"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/edit_text_rounded_corner"
         android:elevation="5dp"
         android:enabled="false"
         android:hint="Gender"
         android:inputType="text"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/profle_update_btn"
+        app:layout_constraintBottom_toTopOf="@+id/profile_new_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_phone" />
+
+    <EditText
+        android:id="@+id/profile_new_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:enabled="false"
+        android:hint="New Password"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_confirm_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_gender" />
+
+    <EditText
+        android:id="@+id/profile_confirm_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:enabled="false"
+        android:hint="Confirm Password"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/profle_save_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_new_password" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -100,30 +136,19 @@
             app:srcCompat="@drawable/profile" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/logout_btn"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/profle_save_btn"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="155dp"
-        android:text="Logout"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/btn_rounded_corner"
+        android:text="Save"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profle_update_btn" />
-
-    <Button
-        android:id="@+id/profle_update_btn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/btn_rounded_corner"
-        android:text="Update profile"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/logout_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_gender" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_confirm_password" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
