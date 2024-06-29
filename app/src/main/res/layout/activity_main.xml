@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/brown"
+    android:layout_margin="50dp"
+
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".editProfile">
@@ -14,32 +15,28 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
+        android:layout_marginTop="135dp"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="25dp"
         android:background="@drawable/edit_text_rounded_corner"
         android:elevation="5dp"
         android:hint="Username"
-        android:inputType="text"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/profile_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/profile_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
+        android:layout_marginTop="26dp"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="24dp"
         android:background="@drawable/edit_text_rounded_corner"
         android:elevation="5dp"
         android:enabled="false"
         android:hint="Email"
-        android:inputType="text"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/profile_phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_username" />
@@ -49,15 +46,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="25dp"
         android:background="@drawable/edit_text_rounded_corner"
         android:elevation="5dp"
         android:enabled="false"
         android:hint="Phone"
-        android:inputType="text"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/profile_gender"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_email" />
@@ -67,15 +62,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="25dp"
         android:background="@drawable/edit_text_rounded_corner"
         android:elevation="5dp"
         android:enabled="false"
         android:hint="Gender"
-        android:inputType="text"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/profle_update_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_phone" />
@@ -83,19 +76,19 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="25dp"
         android:layout_marginTop="89dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginBottom="86dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/profile_username"
+        app:layout_constraintBottom_toTopOf="@+id/profile_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="144dp"
             app:srcCompat="@drawable/profile" />
     </LinearLayout>
@@ -104,26 +97,17 @@
         android:id="@+id/logout_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="155dp"
         android:text="Logout"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profle_update_btn" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/profle_update_btn"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/edit_btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/btn_rounded_corner"
-        android:text="Update profile"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/logout_btn"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Edit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_gender" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
