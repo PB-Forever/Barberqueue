@@ -1,5 +1,16 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.0.2")
+        classpath("com.google.gms:google-services:4.4.2") // Tambahkan baris ini
+    }
+}
+
 plugins {
-    id("com.android.application") version "8.2.2" apply false
-    id("org.jetbrains.kotlin.android") version "1.9.22" apply false
+    alias(libs.plugins.androidApplication) apply false
+    alias(libs.plugins.jetbrainsKotlinAndroid) apply false
+}
+
+tasks.register<Delete>("clean") {
+    delete(layout.buildDirectory.get().asFile) // Perbarui baris ini
 }

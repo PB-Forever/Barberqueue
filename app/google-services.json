@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "827558355316",
+    "project_id": "barberqueue-dc011",
+    "storage_bucket": "barberqueue-dc011.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827558355316:android:567014bdb5534392964c21",
+        "android_client_info": {
+          "package_name": "com.example.barberqueue"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApv1WuMQ0HVfzmp_85D-D8R_YevNgtrF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
