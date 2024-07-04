@@ -14,7 +14,7 @@ import java.util.Calendar
 import java.util.Date
 import java.util.Locale
 
-class ReserveActivity : AppCompatActivity(), DateOnClickListener, BarberOnClickListener{
+class ReserveTimeBarberActivity : AppCompatActivity(), DateOnClickListener, BarberOnClickListener{
 
     private lateinit var recyclerView1: RecyclerView
     private lateinit var recyclerView2: RecyclerView
@@ -23,7 +23,7 @@ class ReserveActivity : AppCompatActivity(), DateOnClickListener, BarberOnClickL
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_reserve)
+        setContentView(R.layout.activity_reserve_time_barber)
 
         recyclerView1 = findViewById(R.id.recycle_date)
         recyclerView1.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)

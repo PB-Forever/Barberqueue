@@ -69,6 +69,7 @@
                 android:layout_marginBottom="5dp"/>
 
             <GridLayout
+                android:id="@+id/time_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -248,7 +249,7 @@
                 android:id="@+id/choose_services_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Choose Services"
+                android:text="Upload Bukti Transaksi"
                 android:background="@drawable/date_reserve_normal"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginVertical="15dp"/>
