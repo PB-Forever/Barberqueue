@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/serviceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="services"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/coklat3"
+        android:background="@drawable/border"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="24dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
