@@ -68,183 +68,19 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="5dp"/>
 
-            <GridLayout
-                android:id="@+id/time_list"
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginHorizontal="10dp"
-                android:columnCount="3"
-                android:useDefaultMargins="true">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/flexbox_layout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="09.00"
-                    android:button="@android:color/transparent"/>
+                    android:paddingHorizontal="10dp"
+                    app:flexWrap="wrap"
+                    app:justifyContent="flex_start">
+                </com.google.android.flexbox.FlexboxLayout>
+            </RadioGroup>
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="10.00"
-                    android:button="@android:color/transparent"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="11.00"
-                    android:button="@android:color/transparent"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="12.00"
-                    android:button="@android:color/transparent"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="13.00"
-                    android:button="@android:color/transparent"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="14.00"
-                    android:button="@android:color/transparent"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="15.00"
-                    android:button="@android:color/transparent"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="16.00"
-                    android:button="@android:color/transparent"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="17.00"
-                    android:button="@android:color/transparent"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="18.00"
-                    android:button="@android:color/transparent"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="19.00"
-                    android:button="@android:color/transparent"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="20.00"
-                    android:button="@android:color/transparent"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="21.00"
-                    android:button="@android:color/transparent"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:background="@drawable/date_reserve_selector"
-                    android:minHeight="48dp"
-                    android:text="22.00"
-                    android:button="@android:color/transparent"/>
-            </GridLayout>
             <Button
                 android:id="@+id/choose_services_btn"
                 android:layout_width="match_parent"

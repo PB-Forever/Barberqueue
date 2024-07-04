@@ -9,7 +9,7 @@ import com.example.barberqueue.BarberOnClickListener
 import com.example.barberqueue.R
 
 
-class BarberAdapter(private val itemList: List<Barber>,private val listener: BarberOnClickListener) : RecyclerView.Adapter<BarberAdapter.MyViewHolder>() {
+class BarberAdapter(private var itemList: List<Barber>, private val listener: BarberOnClickListener) : RecyclerView.Adapter<BarberAdapter.MyViewHolder>() {
 
     private var selectedPosition = -1
     class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -44,4 +44,9 @@ class BarberAdapter(private val itemList: List<Barber>,private val listener: Bar
     }
 
     override fun getItemCount() = itemList.size
+
+    fun updateBarberList(newBarberList: List<Barber>) {
+        itemList = newBarberList
+        notifyDataSetChanged()
+    }
 }

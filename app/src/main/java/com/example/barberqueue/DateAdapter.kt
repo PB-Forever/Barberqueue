@@ -48,4 +48,14 @@ class DateAdapter(private val itemList: List<Date>,private val listener: DateOnC
     }
 
     override fun getItemCount() = itemList.size
+    fun getItem(i: Int): Date {
+        return itemList[i]
+    }
+
+    fun setSelectedPosition(position: Int) {
+        val previousPosition = selectedPosition
+        selectedPosition = position
+        notifyItemChanged(previousPosition)
+        notifyItemChanged(position)
+    }
 }
